@@ -251,8 +251,21 @@ article{
 
 .currently{
     margin: 2rem auto;
-    display: block;
-    justify-content: center;
+}
+
+.currently p{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+
+.logo-container{
+    display:flex;
+    justify-content: space-around;
+    gap: 1px;
     align-items: center;
 }
 
@@ -262,7 +275,7 @@ article{
     background-color: #cdcfaea4;
     padding: 10px;
     margin: 0; 
-    
+
 }
 
 
@@ -311,11 +324,13 @@ article{
     margin-top: 20px;
 }
   
-.project h3 {
+h3 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #302d2d;
+    text-align: center;
+    text-transform: uppercase;
 }
   
 .project-info p {
