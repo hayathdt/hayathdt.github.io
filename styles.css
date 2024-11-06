@@ -43,6 +43,7 @@ body {
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .newspaper::before {
     content: '';
     position: absolute;
@@ -130,6 +131,7 @@ nav ul{
 a{
     text-decoration: none;
     margin: 10px 10px;
+    color: var(--text-color);
 }
 
 nav ul li:hover {
@@ -261,7 +263,6 @@ article{
 
 }
 
-
 .logo-container{
     display:flex;
     justify-content: space-around;
@@ -323,7 +324,9 @@ article{
 .project-info {
     margin-top: 20px;
 }
-  
+
+/* ======= title h3 style ======= */
+
 h3 {
     font-size: 20px;
     font-weight: 700;
@@ -349,10 +352,11 @@ h3 {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    background-color: #e6d8c7;
 }
   
 .project-info a:hover {
-    background-color: #e6d8c7;;
+    background-color: #c4b6a6;
 }
 
 @media (max-width: 768px) {
@@ -376,9 +380,7 @@ h3 {
     object-fit: contain;
 }
 
-
-
-/* mes cartes à developper */
+/* mes cartes */
 
 .card, .card2 {
     display: flex;
@@ -402,7 +404,6 @@ h3 {
     cursor: pointer;
 }
 
-  
 .main-card {
     display: black;
     background-color: var(--section-bg);
@@ -432,6 +433,7 @@ input[type="checkbox"]:checked + .sub-cards {
     padding: 10px;
  }
 
+/* ======= BUTTON style ======= */
 
 button{
     border: 1px solid var(--border-color);
@@ -495,7 +497,7 @@ footer::before {
     font-size: 1.2rem;
 }
 
-footer small {
+small {
     font-style: italic;
     font-family: "Times New Roman", Times, serif;
     color: var(--text-color);
@@ -503,7 +505,7 @@ footer small {
     letter-spacing: 1px;
 }
 
-footer small p {
+small p {
     margin: 0;
     padding: 5px 0;
 }
