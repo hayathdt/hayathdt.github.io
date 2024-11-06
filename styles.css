@@ -139,6 +139,25 @@ nav ul li:hover {
     text-decoration: underline;
 }
 
+/* ======= media queries header ======== */
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .subtitle{
+        font-size: 10px;
+        margin: 1rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}
 
 /* Titres style journal */
 h2 {
@@ -236,6 +255,16 @@ article{
     justify-content: center;
     align-items: center;
 }
+
+.social-media img{
+    height: auto;
+    max-width: 100px;
+    background-color: #cdcfaea4;
+    padding: 10px;
+    margin: 0; 
+    
+}
+
 
 /* ======= WORK section ======= */
 
@@ -440,7 +469,7 @@ footer::after {
 }
 
 footer::before {
-    content: '✦';
+    content: "♣";
     position: absolute;
     top: -12px;
     left: 50%;
