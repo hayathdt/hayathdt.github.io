@@ -32,7 +32,8 @@ body {
     margin: 0 auto;
 }
 
-/* Newspaper */
+/* ======= NEWSPAPER style ======= */
+
 .newspaper {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,10 +60,10 @@ body {
     padding-bottom: 1rem;
 }
 
-.masthead {
+.title {
     font-size: 4rem;
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
 }
 
@@ -74,9 +75,8 @@ body {
 .subtitle {
     font-size: 1.2rem;
     border-top: 1px solid var(--border-color);
-
-    padding: 0.5rem 0;
-    margin: 1rem 0;
+    padding: 0;
+    margin: 1.5rem 0;
 }
 
 
@@ -107,6 +107,7 @@ nav ul li{
     z-index: 2;
     background-color:var(--sepia-bg);
     font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--text-color);
@@ -132,18 +133,10 @@ a{
 }
 
 nav ul li:hover {
-    font-weight: bold;
+    color: #524563;
     cursor: pointer;
-}
-
-.name p {
-    font-size: 10px;
-    font-weight: bold;
-    font-size: 80px;
-    font-family: English Towne, "Jacquard 24", "Pinyon Script", cursive;
-    color: var(--title-color);
-    text-align: center;
-               
+    transition: 0.5s;
+    text-decoration: underline;
 }
 
 
@@ -151,10 +144,10 @@ nav ul li:hover {
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin: 0;
     text-transform: uppercase;
     border-bottom: 2px solid var(--border-color);
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -164,31 +157,27 @@ section {
     background-color: var(--section-bg);
     padding: 25px;
     margin: 30px 0;
-    border: 2px double var(--border-color);
     position: relative;
 }
 
-/* les pointillées entre mes sectins, a voir si je laisse :
 
-section::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background: repeating-linear-gradient(90deg, #0e0d0d, #646463 5px, transparent 5px, transparent 10px);
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    right: 0;
-}
-*/
-
-.section-projects{
+.welcome-section{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid var(--border-color);
+    flex-wrap: wrap;
+    margin:0;
+    margin-bottom: 2px solid var(--border-color);
     padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem;
+    }
 }
 
 .section-expertise{
@@ -203,87 +192,274 @@ section::after {
 
 }
 
-/* top section */
-
-.welcome-section{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin:2rem;
-    margin-bottom: 2px solid var(--border-color);
-    padding-bottom: 2rem;
-}
-
-.welcome-section, #about-me{
-    flex-direction: column;
-    height: auto;
-}
+/* WElCOME section */
 
 article{
     border: 1px solid var(--border-color);
     padding: 1rem;
 }
 
-
-#welcome-section p{
+.welcome p, .section-contact p{
     font-size: 18px;
     font-weight: normal;
-    text-align: center;
-    line-height: 1.5rem;;
+    text-align: justify;
+    line-height: 1.5rem;
+    padding-top: 2rem;
 }
 
+#about-me{
+    position: relative;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+#about-me::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
+}
 
 #about-me img{
     width: 100%;
- 
+    height: auto;
+    display: grid;
+    flex-direction: row;
+    border-radius: 8px;    
 }
 
+.currently{
+    margin: 2rem auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
 
-/*
-.button-contact{
+/* ======= WORK section ======= */
+
+.section-projects {
+    padding:0; 
+}
+  
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+  
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+  
+.project {
+    max-width: 300px;
+    text-align: center;
     border: 1px solid var(--border-color);
-    padding: 10px 20px 10px 0;
-    margin: 0;
-
-    background-color: #fdf7f7;
+    box-shadow: 0 4px 10px #727753;
+    padding: 0.5em;
+    background-color: var(--sepia-bg);
+    border-radius: 5px;
 }
 
-.button-contact:hover{
-    background-color: var(--border-color);
-    color: white;
+.project:hover{
+    transform: scale(1.05);
+    box-shadow: var(--color-shadow);
+}
+  
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+   
+}
+  
+.project-info {
+    margin-top: 20px;
+}
+  
+.project h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #302d2d;
+}
+  
+.project-info p {
+    font-size: 16px;
+    color: #726c6c;
+    margin-bottom: 20px;
+}
+  
+.project-info a {
+    display: inline-block;
+    background-color: var(--sepia-color);
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.project-info a:hover {
+    background-color: #e6d8c7;;
 }
 
-*/
+@media (max-width: 768px) {
+    .section-projects ol {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======= EXPERTISE section ======= */
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
 
 /* mes cartes à developper */
 
 .card, .card2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
     padding: 20px;
     border: 1px solid #0e0d0d;
-    margin: 10px 0;
+    margin: 10px 10px 20px 10px;
     cursor: pointer;
-  }
+    border-radius: 8px;
+    background-color: var(--sepia-bg);
+    box-shadow: 0 4px 10px #727753;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card:hover, .card2:hover{
+    background-color: #e4d7c7;
+    cursor: pointer;
+}
+
   
 .main-card {
-    display: block;
-    background-color: #f9f9f9;
-  }
+    display: black;
+    background-color: var(--section-bg);
+}
   
 input[type="checkbox"] {
     display: none;
-  }
+}
   
 .sub-cards {
     display: none;
     margin-top: 10px;
-  }
+}
   
 input[type="checkbox"]:checked + .sub-cards {
     display: block;
-  }
+}
 
 .card2 input[type="checkbox"]:checked + .sub-cards {
     display: block;
-  }
+}
   
+ #cv, .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+ }
+
+
+button{
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #ebdbc9;
+
+}
+
+button:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ======= CONTACT section ======== */
+
+.section-contact p{
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 2rem;
+}
+
+/* ======= FOOTER section ======== */
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    border-top: 2px solid var(--border-color);
+}
+
+footer::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) 5px, transparent 5px, transparent 10px);
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+}
+
+footer::before {
+    content: '✦';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--sepia-bg);
+    padding: 0 10px;
+    color: var(--border-color);
+    font-size: 1.2rem;
+}
+
+footer small {
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+footer small p {
+    margin: 0;
+    padding: 5px 0;
+}
