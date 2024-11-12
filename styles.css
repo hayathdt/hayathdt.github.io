@@ -1,4 +1,3 @@
-
 html {
     margin: 0;
     padding: 0;
@@ -285,7 +284,6 @@ article{
 
 .section-projects {
     padding:0; 
-    position: relative;
 }
   
 .title-container {
@@ -302,11 +300,11 @@ article{
 }
   
 .project {
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 10px #727753;
-    padding: 0.5em;
+    padding: 1em; 
     background-color: var(--sepia-bg);
     border-radius: 5px;
 }
@@ -317,7 +315,7 @@ article{
 }
   
 .project img {
-    max-width: 100%;
+    width: 100%; 
     height: auto;
     border-radius: 8px;
    
@@ -330,14 +328,13 @@ article{
 /* ======= title h3 style ======= */
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #302d2d;
     text-align: center;
     text-transform: uppercase;
-}
-  
+}  
 .project-info p {
     font-size: 16px;
     color: #726c6c;
@@ -367,45 +364,36 @@ h3 {
     }
 }
 
-/* ======= EXPERTISE section ======= */
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
+/* ======= EXPERTISE section ======= *
 
 /* mes cartes */
+  .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 1em;
+      border: 1px solid #0e0d0d;
+      margin: 10px 10px 20px 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      background-color: var(--sepia-bg);
+      box-shadow: 0 4px 10px #727753;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
 
-.card, .card2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 20px;
-    border: 1px solid #0e0d0d;
-    margin: 10px 10px 20px 10px;
-    cursor: pointer;
-    border-radius: 8px;
-    background-color: var(--sepia-bg);
-    box-shadow: 0 4px 10px #727753;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card:hover, .card2:hover{
-    background-color: #e4d7c7;
-    cursor: pointer;
-}
-
+  .card:hover{
+      background-color: #e4d7c7;
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(114, 119, 83, 0.5);
+  }
 .main-card {
     display: black;
     background-color: var(--section-bg);
@@ -434,6 +422,27 @@ input[type="checkbox"]:checked + .sub-cards {
     align-items: center;
     padding: 10px;
  }
+
+/* ======= BUTTON style ======= */
+
+button{
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #ebdbc9;
+
+}
+
+button:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
 
 /* ======= BUTTON style ======= */
 
@@ -513,8 +522,16 @@ small p {
 }
 
 
-i{
-    color: #beaf69;
-    font-size: 70px;
-    text-shadow: #070707 1px 0 10px;
+i {
+    font-size: 70px; 
+    color: #2c1810; 
+    text-shadow: 1px 1px 2px #000000; 
+    font-style: normal; 
+    margin: 10px; 
+    transition: transform 0.3s, color 0.3s;
+}
+
+i:hover {
+    transform: scale(1.1); 
+    color: #524563; 
 }
