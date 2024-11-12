@@ -385,6 +385,7 @@ h3 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
 }
 
 .card:hover{
