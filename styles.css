@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -284,6 +285,7 @@ article{
 
 .section-projects {
     padding:0; 
+    position: relative;
 }
   
 .title-container {
@@ -508,4 +510,11 @@ small {
 small p {
     margin: 0;
     padding: 5px 0;
+}
+
+
+i{
+    color: #beaf69;
+    font-size: 70px;
+    text-shadow: #070707 1px 0 10px;
 }
