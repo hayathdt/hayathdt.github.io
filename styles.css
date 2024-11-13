@@ -10,6 +10,7 @@ html {
     --sepia-bg: #f4e6d4;
     --text-color: #2c1810;
     --border-color: #2c1810;
+    --contact-bg: #4b3411;
 }
 
 * {
@@ -417,12 +418,54 @@ input[type="checkbox"]:checked + .sub-cards {
     display: block;
 }
   
- #cv, .contact{
+#cv, .contact{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
  }
+
+ .contact.card {
+    width: 200px;
+    height: 50px;
+    margin: 2rem auto;
+    margin-left: 25%;
+    padding: 0;
+}
+
+.contact.card .sub-cards {
+    margin-top: 10px;
+    background-color: var(--sepia-bg);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.contact.card .logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact.card .main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ebdbc9;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact-me{
+    background-color: var(--contact-bg);
+    color: white;
+    border: 1px solid white;
+}
+
 
 /* ======= BUTTON style ======= */
 
