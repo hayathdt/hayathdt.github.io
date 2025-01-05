@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const options = { month: 'short', year: 'numeric' };
+    const currentDate = new Date().toLocaleDateString('en-US', options);
+    document.getElementById('current-date').textContent = currentDate;
+});
+
 document.querySelector('.contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
     
