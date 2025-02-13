@@ -1,217 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Portfolio - Hayat Haddouti</title>
     <script defer src="script.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="newspaper">
-
-    <nav id="navbar">
+      <nav id="navbar">
         <ul>
           <li><a href="#profile">About</a></li>
           <li><a href="#projects">Works</a></li>
           <li><a href="#expertise">Expertise</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    <header class="header">
+      </nav>
+      <header class="header">
         <p class="subtitle">DEVELOPER'S GAZETTE</p>
-      <h1 class="title">THE PORTFOLIO</h1>
-      <p class="date-line"><span id="current-date"></span> - France</p>
+        <h1 class="title">THE PORTFOLIO</h1>
+        <p class="date-line"><span id="current-date"></span> - France</p>
         <p class="subtitle">Developed by Hayat HADDOUTI</p>
-    </header>
+      </header>
 
-  <section class="welcome-section" id="profile">
-    <article class="welcome">
-         <h2>WELCOME!</h2>
-         <p>Hello and thank you for visiting my portfolio! I'm a passionate beginner in web development, driven by curiosity and a desire to create effective, visually appealing websites. My journey into coding started with a fascination for how things work behind the scenes on the web, and it quickly turned into a love for building projects myself.</p>
-         <p>Here, you'll find examples of my work, from basic HTML and CSS designs and more advanced web projects. Each project reflects my dedication to learning new skills and improving with each line of code.<p>
-         <p>I invite you to explore my portfolio and see how far I've come on my journey. Whether you're here as a potential collaborator, client, or just browsing, I hope you enjoy the tour. Let's create something amazing together!</p>
-    </article>
+      <section class="welcome-section" id="profile">
+        <article class="welcome">
+          <h2>WELCOME!</h2>
+          <p>
+            Hello and thank you for visiting my portfolio! I'm a passionate
+            beginner in web development, driven by curiosity and a desire to
+            create effective, visually appealing websites. My journey into
+            coding started with a fascination for how things work behind the
+            scenes on the web, and it quickly turned into a love for building
+            projects myself.
+          </p>
+          <p>
+            Here, you'll find examples of my work, from basic HTML and CSS
+            designs and more advanced web projects. Each project reflects my
+            dedication to learning new skills and improving with each line of
+            code.
+          </p>
+          <p></p>
+          <p>
+            I invite you to explore my portfolio and see how far I've come on my
+            journey. Whether you're here as a potential collaborator, client, or
+            just browsing, I hope you enjoy the tour. Let's create something
+            amazing together!
+          </p>
+        </article>
 
-    <article id="about-me">
-         <div class="image">
-              <img src="https://i.postimg.cc/SKtt28ZW/portfolio-image.jpg" alt="photo de profil">
-         </div>
-
-         <div class="currently">
-           <h3>Currently:</h3>
-            <p>Student at AFEC, Agen</p>
-         </div>
-          <div class="social-media">
-           <h3>Social media:</h3>
-           <div class="logo-container">
-             <span><a href="https://github.com/hayathdt"><i class="fab fa-github fa-3x"></i></a></span>
-             <span><a href="https://www.linkedin.com/in/hayathdt/"><i class="fab fa-linkedin fa-3x"></i></a></span>
-           </div>
-         </div>
-     </article>
-
-  </section>
-
-  <section class="section-projects" id="projects">
-    <div class="title-container">
-      <h2>MY WORKS</h2>
-    </div>
-    <div class="project-container">
-    <div class="project" data-project="1">
-        <img src="https://i.postimg.cc/6qf6hhxC/Capture-d-cran-2024-11-12-230539.png" alt="documentation page about black hole">
-        <div class="project-info">
-          <h3>Documentation Page - Black Hole</h3>
-          <p>Technical documentation page about black holes with structured navigation</p>
-          <div class="projet-actions">
-              <span class="github-link"><a href="https://github.com/hayathdt/freecodecamp/tree/main/3eme%20projet"><i class="fab fa-github"></i></a></span>
-              <span class="material-symbols-outlined"><i class="fa-solid fa-chevron-down fa-beat"></i></span>
-              <span><a href="https://hayathdt.github.io/freecodecamp-ResponsiveWebDesign/documentation/"<i class="fas fa-globe-americas"></i></a></span>
-
-            </div>
-      </div>
-    </div>
-    <div class="project" data-project="2">
-        <img src="https://i.postimg.cc/fy2LHW9W/Screenshot-2024-11-05-at-20-04-34-Page-de-Miel-Artisanal.png" alt="landing page honey shopping">
-        <div class="project-info">
-            <h3>Landing Page - Nahla Shop</h3>
-            <p>Responsive showcase website for an artisanal honey shop</p>
-            <div class="projet-actions">
-              <span class="github-link"><a href="https://github.com/hayathdt/freecodecamp/tree/main/4eme%20projet"><i class="fab fa-github"></i></a></span>
-              <span class="material-symbols-outlined"><i class="fa-solid fa-chevron-down fa-beat"></i></span>
-              <span><a href="https://hayathdt.github.io/freecodecamp-ResponsiveWebDesign/4eme%20projet/"<i class="fas fa-globe-americas"></i></a></span>
-            </div>
-        </div>
-    </div>
-    <div class="project" data-project="3">
-      
-        <img src="https://i.postimg.cc/pLt5GKyK/Capture-d-cran-2024-12-10-094118.png" alt="Project image">
-        <div class="project-info">
-            <h3>Pokedex pokemon with API</h3>
-            <p>Dynamic web application that fetches and displays Pokemon data with API.</p>
-            <div class="projet-actions">
-              <span class="github-link"><a href="https://github.com/hayathdt/pokedex"><i class="fab fa-github"></i></a></span>
-              <span class="material-symbols-outlined"><i class="fa-solid fa-chevron-down fa-beat"></i></span>
-              <span><a href="https://hayathdt.github.io/pokedex/pokedex"<i class="fas fa-globe-americas"></i></a></span>
-            </div>
-        </div>
-    </div>
-    <div class="project" data-project="4">
-      
-      <img src="" alt="Project image">
-      <div class="project-info">
-          <h3>Palindrome checkeur</h3>
-          <p>lorem ipsum</p>
-          <div class="projet-actions">
-            <span class="github-link"><a href=""><i class="fab fa-github"></i></a></span>
-            <span class="material-symbols-outlined"><i class="fa-solid fa-chevron-down fa-beat"></i></span>
-            <span><a href="" target="_blank"><i class="fas fa-globe-americas"></i></a></span>
+        <article id="about-me">
+          <div class="image">
+            <img
+              src="https://i.postimg.cc/SKtt28ZW/portfolio-image.jpg"
+              alt="photo de profil"
+            />
           </div>
-      </div>
-  </div>
-    <div id="project-details" class="hidden">
-    <div class="details-content">
-        <div class="details-text">
-            <h3></h3>
-            <p></p>
+
+          <div class="currently">
+            <h3>Currently:</h3>
+            <p>Student at AFEC, Agen</p>
+          </div>
+          <div class="social-media">
+            <h3>Social media:</h3>
+            <div class="logo-container">
+              <span
+                ><a href="https://github.com/hayathdt"
+                  ><i class="fab fa-github fa-3x"></i></a
+              ></span>
+              <span
+                ><a href="https://www.linkedin.com/in/hayathdt/"
+                  ><i class="fab fa-linkedin fa-3x"></i></a
+              ></span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-projects" id="projects">
+        <div class="title-container">
+          <h2>MY WORKS</h2>
         </div>
-        <div class="details-image">
-            <img src="" alt="Project detail">
+
+        <div class="project-container">
+          <!-- Project 1 - Black Hole Documentation -->
+          <div class="project" data-project="1">
+            <a
+              href="https://hayathdt.github.io/freecodecamp-ResponsiveWebDesign/documentation/"
+              class="project-link"
+            >
+              <div class="project-info">
+                <h3>Documentation Page - Black Hole</h3>
+                <p>
+                  Technical documentation page about black holes with structured
+                  navigation
+                </p>
+                <span class="github-link">
+                  <a
+                    href="https://github.com/hayathdt/freecodecamp/tree/main/3eme%20projet"
+                  >
+                    <!--<i class="fab fa-github"></i>-->
+                  </a>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 2 - Nahla Shop -->
+          <div class="project" data-project="2">
+            <a
+              href="https://hayathdt.github.io/freecodecamp-ResponsiveWebDesign/4eme%20projet/"
+              class="project-link"
+            >
+              <div class="project-info">
+                <h3>Landing Page - Nahla Shop</h3>
+                <p>Responsive showcase website for an artisanal honey shop</p>
+                <span class="github-link">
+                  <a
+                    href="https://github.com/hayathdt/freecodecamp/tree/main/4eme%20projet"
+                  >
+                    <!--<i class="fab fa-github"></i>-->
+                  </a>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3 - Pokedex -->
+          <div class="project" data-project="3">
+            <a
+              href="https://hayathdt.github.io/pokedex/pokedex"
+              class="project-link"
+            >
+              <div class="project-info">
+                <h3>Pokedex pokemon with API</h3>
+                <p>
+                  Dynamic web application that fetches and displays Pokemon data
+                  using REST API integration
+                </p>
+                <span class="github-link">
+                  <a href="https://github.com/hayathdt/pokedex">
+                    <!-- <i class="fab fa-github"></i>-->
+                  </a>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 4 - Palindrome Checker -->
+          <div class="project" data-project="4">
+            <a href="#" class="project-link">
+              <div class="project-info">
+                <h3>Palindrome checkeur</h3>
+                <p>
+                  Interactive tool to check if words or phrases are palindromes
+                </p>
+                <span class="github-link">
+                  <a href="#">
+                    <!-- <i class="fab fa-github"></i> -->
+                  </a>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 5 - Weather Dashboard -->
+          <div class="project" data-project="5">
+            <a href="#" class="project-link">
+              <div class="project-info">
+                <h3>PROJECT 5</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus maxime hic nam laborum illum ratione dolorum beatae,
+                  dolorem eaque quia porro odio, maiores sunt cupiditate
+                  inventore, quisquam minus ipsam est?
+                </p>
+                <span class="github-link">
+                  <a href="#">
+                    <!--<i class="fab fa-github"></i>-->
+                  </a>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 6 - Task Manager -->
+          <div class="project" data-project="6">
+            <a href="#" class="project-link">
+              <div class="project-info">
+                <h3>PROJECT 6</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Reiciendis rerum alias voluptatem, delectus eaque autem
+                  aspernatur itaque tempore explicabo impedit est ab error
+                  molestiae nostrum architecto facilis eum. Ad, tempore!
+                </p>
+                <span class="github-link">
+                  <a href="#">
+                    <!--<i class="fab fa-github"></i>-->
+                  </a>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project Details Section -->
+          <div id="project-details" class="hidden">
+            <div class="details-content">
+              <div class="details-text">
+                <h3></h3>
+                <p></p>
+              </div>
+              <div class="details-image">
+                <img src="" alt="Project detail" />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</section>
-  
-<section class="section-expertise" id="expertise">
-   <div class="title-container">
-   <h2>Technical Expertise</h2>
-   <!-- HTML5 SVG -->
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512">
-     <path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
-   </svg>
-  
-   <!-- CSS3 SVG -->
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512">
-     <path fill="currentColor" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
-   </svg>
-  
-   <!-- JavaScript SVG -->
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
-     <path fill="currentColor" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/>
-   </svg>
+      </section>
 
-   <!-- Tailwind CSS SVG -->
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 33">
-     <path fill="currentColor" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
-   </svg>
-</div>
+      <section class="section-expertise" id="expertise">
+        <div class="title-container">
+          <h2>Technical Expertise</h2>
+          <!-- HTML5 SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="currentColor"
+              d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"
+            />
+          </svg>
 
-   <div class="card">
-     <label for="toggle" class="main-card">Education & Training</label>
-     <input type="checkbox" id="toggle">
-     <div class="sub-cards">
-       <div class="card">Web Development Training - in progress</div>
-       <div class="card">Bachelor's Degree in Law - Level L2</div>
-       <div class="card">High School Diploma in Economics and Social Sciences - 2018</div>
-     </div>
-   </div>
+          <!-- CSS3 SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="currentColor"
+              d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
+            />
+          </svg>
 
- <!-- Carte Pro -->
+          <!-- JavaScript SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
+            />
+          </svg>
 
-  <div class="card">
-     <label for="pro" class="main-card">Certification</label>
-     <input type="checkbox" id="pro">
-     <div class="sub-cards">
-       <div class="card">Responsive Web Design - freecodecamp</div>
-       <img src="https://i.postimg.cc/PxJprYQM/Screenshot-2024-11-13-at-09-29-20.png" alt="Responsive Web Design Certification">
+          <!-- Tailwind CSS SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 54 33"
+          >
+            <path
+              fill="currentColor"
+              d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+            />
+          </svg>
+        </div>
 
-   </div>
-   </div>
-       
-          <div id="cv">
-            <a class="btn-cv" href="HayatHADDOUTI-CV.pdf" download="Hayat_HADDOUTI_CV"> Download my CV</a>
-</div>
-</section>
+        <div class="card">
+          <label for="toggle" class="main-card">Education & Training</label>
+          <input type="checkbox" id="toggle" />
+          <div class="sub-cards">
+            <div class="card">Web Development Training - in progress</div>
+            <div class="card">Bachelor's Degree in Law - Level L2</div>
+            <div class="card">
+              High School Diploma in Economics and Social Sciences - 2018
+            </div>
+          </div>
+        </div>
 
-    <section class="contact" id="contact">
-      <h2>Let's Work Together </h2>
-      <p>Currently available for select projects and collaborations. Get in touch to discuss how we can create something amazing.</p>
+        <!-- Carte Pro -->
+
+        <div class="card">
+          <label for="pro" class="main-card">Certification</label>
+          <input type="checkbox" id="pro" />
+          <div class="sub-cards">
+            <div class="card">Responsive Web Design - freecodecamp</div>
+            <img
+              src="https://i.postimg.cc/PxJprYQM/Screenshot-2024-11-13-at-09-29-20.png"
+              alt="Responsive Web Design Certification"
+            />
+          </div>
+        </div>
+
+        <div id="cv">
+          <a
+            class="btn-cv"
+            href="HayatHADDOUTI-CV.pdf"
+            download="Hayat_HADDOUTI_CV"
+          >
+            Download my CV</a
+          >
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Let's Work Together</h2>
+        <p>
+          Currently available for select projects and collaborations. Get in
+          touch to discuss how we can create something amazing.
+        </p>
 
         <form class="contact-form" method="POST">
-            <label for="nom" id="label_nom">Name</label>
-            <div class="input-container">
-                <i class="fas fa-user-circle"></i>
-                <input type="text" name="nom" id="nom" placeholder="Your name" required>
-            </div>
+          <label for="nom" id="label_nom">Name</label>
+          <div class="input-container">
+            <i class="fas fa-user-circle"></i>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Your name"
+              required
+            />
+          </div>
 
-            <label for="email" id="label_email">Email</label>
-            <div class="input-container">
-                <i class="fas fa-at"></i>
-                <input type="email" name="email" id="email" placeholder="Votre Email" required>
-            </div>
+          <label for="email" id="label_email">Email</label>
+          <div class="input-container">
+            <i class="fas fa-at"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Votre Email"
+              required
+            />
+          </div>
 
-            <label for="message" id="label_message">Message</label>
-            <div class="input-container">
-                <i class="fas fa-paper-plane"></i>
-                <textarea name="message" id="message" placeholder="Your message" required></textarea>
-            </div>
-            <button type="submit" id="submit_button">Send</button>
-        </form>     
+          <label for="message" id="label_message">Message</label>
+          <div class="input-container">
+            <i class="fas fa-paper-plane"></i>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" id="submit_button">Send</button>
+        </form>
         <script>
-            (function(){
-                emailjs.init("Tyu9xm2dkYzUn-zCx");
-            })();
-        </script>          
-  </section>
-  
-  <footer>
-    <small>
-      <p>&copy; hayathdt - All rights reserved.</p>
-    </small>
-  </footer>
-  </div>
+          (function () {
+            emailjs.init("Tyu9xm2dkYzUn-zCx");
+          })();
+        </script>
+      </section>
+
+      <footer>
+        <small>
+          <p>&copy; hayathdt - All rights reserved.</p>
+        </small>
+      </footer>
+    </div>
   </body>
-  </html>
+</html>
